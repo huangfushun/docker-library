@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y unzip curl apt-transport-https && \
     apt-get update && apt-get install -y yarn
 RUN cd /opt && \
      wget https://github.com/spinnaker/deck/archive/version-2.5.4.zip && \
-     unzip version-2.5.4.zip && \
-     mv version-2.5.4 deck && \
+     unzip -q version-2.5.4.zip && \
+     mv deck-version-2.5.4 deck && \
      cd deck && \
      yarn
 WORKDIR /opt/deck
