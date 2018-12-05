@@ -1,2 +1,2 @@
-FROM gcr.io/google-containers/etcd-amd64:2.3.7
+FROM gcr.io/etcd-development/etcd:v3.2.25
 MAINTAINER mritd <mritd@mritd.me>
